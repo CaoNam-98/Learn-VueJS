@@ -10,7 +10,10 @@ export default {
     // counter() {
     //   return this.$store.getters.finalCounter;
     // },
+    // Cách 1: Sử dụng namespacing
     ...mapGetters('numbers', ['finalCounter'])
+    // Cách 2: Không sử dụng namespacing
+    // ...mapGetters(['finalCounter'])
   },
 };
 </script>

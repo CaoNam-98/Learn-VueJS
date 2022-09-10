@@ -7,6 +7,9 @@
 export default {
   computed: {
     counter() {
+      // Cách 1: 
+      // return this.$store.getters.normalizedCounter;
+      // Cách 2:
       return this.$store.getters['numbers/normalizedCounter'];
     },
   },

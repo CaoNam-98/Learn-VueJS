@@ -33,6 +33,13 @@ export default {
   methods: {
     addOne() {
       // this.$store.dispatch('increase', { value: 10 });
+      // Khi không sử dụng namespacing
+      this.$store.dispatch({
+        type: 'increase',
+        value: 10,
+      });
+
+      // Khi sử dụng namespacing
       this.$store.dispatch({
         type: 'numbers/increase',
         value: 10,

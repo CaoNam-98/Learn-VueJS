@@ -12,6 +12,12 @@ export default {
     //   this.$store.dispatch('increment');
     // }
     // ...mapActions(['increment', 'increase'])
+    // Cách 1: Không sử dụng namespacing
+    // ...mapActions({
+    //   inc: 'increment',
+    //   increase: 'increase'
+    // })
+    // Cách 2: Sử dụng namespacing
     ...mapActions('numbers', {
       inc: 'increment',
       increase: 'increase'
